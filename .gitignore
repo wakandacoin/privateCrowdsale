@@ -1,3 +1,5 @@
 #.gitignore
 .deployedAbi.json
 .byteCode
+WakandaCoinPrivateCrowdsale_copied_from_remix.json
+WakandaCoinPrivateCrowdsale_metadata_copied_from_remix.json
