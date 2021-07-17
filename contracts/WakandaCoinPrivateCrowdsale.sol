@@ -1,13 +1,14 @@
 pragma solidity ^0.5.0;
 
-import "https://raw.githubusercontent.com/OpenZeppelin/openzeppelin-contracts/v2.5.1/contracts/token/ERC20/IERC20.sol";
-import "https://raw.githubusercontent.com/OpenZeppelin/openzeppelin-contracts/v2.5.1/contracts/crowdsale/Crowdsale.sol";
-import "https://raw.githubusercontent.com/OpenZeppelin/openzeppelin-contracts/v2.5.1/contracts/crowdsale/validation/CappedCrowdsale.sol";
-import "https://raw.githubusercontent.com/OpenZeppelin/openzeppelin-contracts/v2.5.1/contracts/crowdsale/validation/WhitelistCrowdsale.sol";
-import "https://raw.githubusercontent.com/OpenZeppelin/openzeppelin-contracts/v2.5.1/contracts/crowdsale/validation/TimedCrowdsale.sol";
-import "https://raw.githubusercontent.com/OpenZeppelin/openzeppelin-contracts/v2.5.1/contracts/crowdsale/distribution/PostDeliveryCrowdsale.sol";
-import "https://raw.githubusercontent.com/OpenZeppelin/openzeppelin-contracts/v2.5.1/contracts/crowdsale/validation/IndividuallyCappedCrowdsale.sol";
-import "https://raw.githubusercontent.com/OpenZeppelin/openzeppelin-contracts/v2.5.1/contracts/crowdsale/validation/PausableCrowdsale.sol";
+import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import "@openzeppelin/contracts/crowdsale/Crowdsale.sol";
+import "@openzeppelin/contracts/crowdsale/validation/CappedCrowdsale.sol";
+import "@openzeppelin/contracts/crowdsale/validation/WhitelistCrowdsale.sol";
+import "@openzeppelin/contracts/crowdsale/validation/TimedCrowdsale.sol";
+import "@openzeppelin/contracts/crowdsale/distribution/PostDeliveryCrowdsale.sol";
+import "@openzeppelin/contracts/crowdsale/validation/IndividuallyCappedCrowdsale.sol";
+import "@openzeppelin/contracts/crowdsale/validation/PausableCrowdsale.sol";
+
 
 contract WakandaCoinPrivateCrowdsale is Crowdsale,CappedCrowdsale, IndividuallyCappedCrowdsale, TimedCrowdsale, WhitelistCrowdsale, PausableCrowdsale, PostDeliveryCrowdsale{
 
