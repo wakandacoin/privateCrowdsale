@@ -9,7 +9,7 @@ import "https://raw.githubusercontent.com/OpenZeppelin/openzeppelin-contracts/v2
 import "https://raw.githubusercontent.com/OpenZeppelin/openzeppelin-contracts/v2.5.1/contracts/crowdsale/validation/IndividuallyCappedCrowdsale.sol";
 import "https://raw.githubusercontent.com/OpenZeppelin/openzeppelin-contracts/v2.5.1/contracts/crowdsale/validation/PausableCrowdsale.sol";
 
-contract WakaCoinCrowdsale is Crowdsale,CappedCrowdsale, IndividuallyCappedCrowdsale, TimedCrowdsale, WhitelistCrowdsale, PausableCrowdsale, PostDeliveryCrowdsale{
+contract WakandaCoinPrivateCrowdsale is Crowdsale,CappedCrowdsale, IndividuallyCappedCrowdsale, TimedCrowdsale, WhitelistCrowdsale, PausableCrowdsale, PostDeliveryCrowdsale{
 
 	string internal constant _wallet = '0x06f6d9d14EA5Bb788CcD0e83e102758986eFbbBA';
 	string internal constant _token = '0x8447A658adD00193aE43DE330f2EA7524cE65B75';
