@@ -11,9 +11,6 @@ import "https://raw.githubusercontent.com/OpenZeppelin/openzeppelin-contracts/v2
 
 contract WakandaCoinPrivateCrowdsale is Crowdsale,CappedCrowdsale, IndividuallyCappedCrowdsale, TimedCrowdsale, WhitelistCrowdsale, PausableCrowdsale, PostDeliveryCrowdsale{
 
-	string internal constant _wallet = '0x06f6d9d14EA5Bb788CcD0e83e102758986eFbbBA';
-	string internal constant _token = '0x8447A658adD00193aE43DE330f2EA7524cE65B75';
-
     uint256 internal constant tokenUnit = 10**18;
     uint256 internal constant oneQuadrillion = 10**15;
     uint256 internal constant oneBillion = 10**9;
@@ -32,7 +29,7 @@ contract WakandaCoinPrivateCrowdsale is Crowdsale,CappedCrowdsale, IndividuallyC
         address payable wallet, 
         IERC20 token
     )  
-        Crowdsale(_rate, _wallet, _token) 
+        Crowdsale(_rate, wallet, token) 
         CappedCrowdsale(_cap)
         TimedCrowdsale(_openingTime, _closeingTime)
     public {
